@@ -11,7 +11,7 @@ COPY    ${MAINCLASS}.java ./
 RUN     javac *.java
 RUN     jar cfe main.jar ${MAINCLASS} *.class
 
-FROM    ${SOURCE_REGISTRY}openjdk-jre:11
+FROM    ${SOURCE_REGISTRY}java:11
 
 ARG     APPDIR
 
